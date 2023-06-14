@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dia da Semana</h1>
+    <input type="button" value="Clique aqui!" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar() {
+            var hoje = new Date()
+            var dia = hoje.getDay()
+            var res = document.querySelector("div#res")
+
+            switch (dia) {
+                case 0: 
+                    res.innerHTML = "Hoje é Domingo!"
+                    break
+
+                case 1:
+                    res.innerHTML = "Hoje é Segunda-Feira!"
+                    break
+                
+                case 2:
+                    res.innerHTML = "Hoje é Terça-Feira"
+                    break
+
+                case 3:
+                    res.innerHTML = "Hoje é Quarta-Feira"
+                    break
+
+                case 4:
+                    res.innerHTML = "Hoje é Quinta-Feira"
+                    break
+
+                case 5:
+                    res.innerHTML = "Hoje é Sexta-Feira"
+                    break
+
+                case 6:
+                    res.innerHTML = "Hoje é Sábado-Feira"
+                    break
+
+                default:
+                    res.innerHTML = "ERRO!"
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

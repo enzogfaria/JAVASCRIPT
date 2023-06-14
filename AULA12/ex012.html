@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 12</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="button" value="Checar" onclick="checar()">
+    <div id="res"></div>
+    <div id="msg"></div>
+    <script> 
+        function checar() {
+            var hora = new Date()
+            var horario = hora.getHours()
+            var res = document.querySelector("div#res")
+            var msg = document.querySelector("div#msg")
+            res.innerHTML = `Agora são exatamente ${horario} horas`
+            if (horario < 12){
+                msg.innerHTML += "Bom dia!"
+            } else if (horario < 19){
+                msg.innerHTML += "Boa Tarde!"
+            } else {
+                msg.innerHTML += "Boa noite!"
+            }
+        }
+    </script>
+</body>
+</html>
