@@ -3,7 +3,8 @@ function verificar() {
     var ano = data.getFullYear()
     var nas = document.querySelector("input#nascimento")
     var res = document.querySelector("div#res")
-
+     
+    /* TESTE*/
     if (nas.value.length == 0 || nas > (ano.value)){
         window.alert ("[ERRO] Insera os valores novamente!")
     }else {
